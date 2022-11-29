@@ -6,7 +6,7 @@ manifest:
       url-base: https://github.com/th4656
   projects:
     - name: zmk
-      remote: dongle
+      remote: zmkfirmware
       revision: main
       import: app/west.yml
   self:
