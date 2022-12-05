@@ -26,7 +26,7 @@
 &kp K_SCROLL_UP &kp TAB  &kp Q    &kp W    &kp F    &kp P             &kp G      &kp J    &kp L    &kp U     &kp Y    &kp SEMI    &kp LBKT    &kp RBKT     &kp BSLH   &kp K_PLAY_PAUSE
 &kp K_SCROLL_DOWN &kp ESC &kp A   &kp R    &kp S    &kp T             &kp D      &kp H    &kp N    &kp E     &kp I    &kp O       &kp SQT     &kp RET                 &kp K_NEXT
 &kp K_PASTE  &kp LSHFT   &kp NUHS &kp Z    &kp X    &kp C    &kp V    &kp B      &kp K    &kp M    &kp COMMA &kp DOT  &kp FSLH    &kp RSHFT                &kp UP     &kp K_PREV
-&kp K_COPY   &kp LCTRL   &kp LGUI &kp LALT          &kp LC(RCTRL)    &kp SPACE    &kp SPACE                  &lt 2 RALT &mo 3     &mo 4       &kp LEFT     &kp DOWN   &kp RIGHT
+&kp K_COPY   &kp LCTRL   &kp LGUI &kp LALT          &kp LC(RCTRL)    &kp SPACE    &kp SPACE                  &lt 2 RALT &mo 3     &kp LC(RCTRL) &kp LEFT   &kp DOWN   &kp RIGHT
 			>;
 		};
 
