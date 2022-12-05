@@ -51,7 +51,7 @@
 &trans       &trans      &tog 1   &trans   &trans   &trans            &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &trans     &trans
 &trans       &trans      &trans   &trans   &trans   &trans            &trans     &trans   &kp J    &kp K    &kp L     &trans      &trans                   &trans     &trans
 &trans       &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans          &trans  &trans &trans
-&trans       &trans      &trans   &trans            &trans           &trans       &trans                    &trans    &trans  &trans  &trans  &trans &trans
+&trans       &trans      &trans   &trans            &trans           &trans       &trans                    &trans    &trans  &trans  &trans  &trans &tog 1
 			>;
 		};
 	};
