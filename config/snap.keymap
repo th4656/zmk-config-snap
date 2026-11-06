@@ -15,7 +15,13 @@
 		to_qwerty: to_qwerty {
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
-			bindings = <&tog 1>, <&bl BL_TOG>;
+			bindings = <&to 1>, <&bl BL_ON>;
+		};
+
+		to_colemak: to_colemak {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&to 0>, <&bl BL_OFF>;
 		};
 	};
 
@@ -49,7 +55,7 @@
 &kp PG_DN  &trans      &kp Q    &kp W    &kp E    &kp R             &kp T      &kp Y    &kp U    &kp I     &kp O    &kp P       &kp LBKT    &kp RBKT     &kp BSLH   &trans
 &kp HOME   &trans      &kp A    &kp S    &kp D    &kp F             &kp G      &kp H    &kp J    &kp K     &kp L    &kp SEMI    &kp SQT     &kp RET                 &trans
 &kp END    &trans      &trans   &kp Z    &kp X    &kp C    &kp V    &kp B      &kp N    &kp M    &kp COMMA &kp DOT  &kp FSLH    &kp RSHFT                &kp UP     &trans
-&kp INS    &kp LCTRL   &kp LGUI &kp LALT          &trans           &kp SPACE    &kp SPACE                  &mo 2    &trans    &kp RCTRL  &kp LEFT     &kp DOWN   &kp RIGHT
+&kp INS    &kp LCTRL   &kp LGUI &kp LALT          &trans           &kp SPACE    &kp SPACE                  &mo 3    &trans    &kp RCTRL  &kp LEFT     &kp DOWN   &kp RIGHT
 			>;
 		};
 		misc_layer {
@@ -62,6 +68,18 @@
 &trans       &trans      &trans   &trans   &trans   &trans            &trans     &trans   &kp J    &kp K    &kp L     &trans      &trans                   &trans     &trans
 &trans       &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans          &trans  &trans &trans
 &trans       &trans      &trans   &trans            &trans           &trans       &trans                    &trans    &trans  &trans  &trans  &trans &to_qwerty
+			>;
+		};
+		qwerty_misc_layer {
+			label = "QWERTY Misc";
+			sensor-bindings = <&inc_dec_kp C_NEXT C_PREV &inc_dec_kp C_NEXT C_PREV>;
+			bindings = <
+             &bootloader &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &kp SYSREQ
+&kp K_PP     &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &trans     &kp C_PP
+&trans       &trans      &to_colemak &trans   &trans   &trans            &trans     &trans   &trans   &trans   &trans    &trans      &trans      &trans       &trans     &trans
+&trans       &trans      &trans   &trans   &trans   &trans            &trans     &trans   &kp J    &kp K    &kp L     &trans      &trans                   &trans     &trans
+&trans       &trans      &trans   &trans   &trans   &trans   &trans   &trans     &trans   &trans   &trans   &trans    &trans          &trans  &trans &trans
+&trans       &trans      &trans   &trans            &trans           &trans       &trans                    &trans    &trans  &trans  &trans  &trans &to_colemak
 			>;
 		};
 	};
